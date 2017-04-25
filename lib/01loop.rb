@@ -4,7 +4,11 @@
 #
 # Example method call:
 #
-# p_times('Hello there', 3)
+def p_times(statement, num)
+  num.times { p statement }
+end
+
+p_times('Hello there', 3)
 #
 # > Hello there
 # > Hello there

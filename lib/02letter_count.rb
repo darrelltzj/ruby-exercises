@@ -3,6 +3,15 @@
 #
 # Example method call:
 #
-# letter_count('banana')
+def letter_count(str)
+  hash = {}
+  arr = str.split('')
+  arr.each do |i|
+    hash[i] = arr.count(i)
+  end
+  hash
+end
+
+p letter_count('banana')
 #
 # > {"b" => 1, "a" => 3, "n" => 2}
